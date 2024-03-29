@@ -1,66 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h2 style="margin-left: 50px;"><font color="red">&#129333 Employee Registration Form</font></h2>
-    <link rel="stylesheet" href="ex04.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Background Video</title>
+    <link rel="stylesheet" href="style-index.css">
+
 </head>
 <body>
-    <div  style="margin-left: 240px;">
-        <input type="radio" id="Mr">
-        <label for="Mr">Mr.</label>
-        <input type="radio" id="Mrs">
-        <label for="Mrs">Mrs.</label>
-        <input type="radio" id="Ms">
-        <label for="Ms">Ms.</label>
-    </div>
+    <div class="hero">
 
-    <div>
-        <form action="https://wathrak.github.io/tp01-ipe/">
-            <label for="fname">First Name</label>
-            <input style="margin-left: 170px;" type="text" id="fname" name="fname" placeholder="First Name"><br><br>
-            <label for="lname">Last Name</label>
-            <input style="margin-left: 170px;" type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
-            <label for="address1">Mail Address 1</label>
-            <input style="margin-left: 140px;" type="text" id="address1" name="address1"><br><br>
-            <label for="address2">Mail Address 2</label>
-            <input style="margin-left: 140px;" type="text" id="address2" name="address2"><br><br>
-            <label for="city">City</label>
-            <input style="margin-left: 210px;" type="text" id="city" name="city"><br><br>
-            <label for="state">State</label>
-            <select style="margin-left: 207px;" name="state" id="state">
-                <option value="phnompenh">Phnom Penh</option>
-                <option value="bangkok">Bangkok</option>
-                <option value="hanoi">Hanoi</option>
-                <option value="amsterdam">Amsterdam</option>
-            </select><br><br>
-            <label for="zip">Zip</label>
-            <input style="margin-left: 215px;" type="text" id="zip" name="zip"><br><br>
-            <label for="text">Upload Photo</label>
-            <input style="margin-left: 150px;" type="button" value="Browse...">
-            <label for="text" style="font-size: small;">No File Selected.</label><br><br>
-            <label for="email">E-Mail</label>
-            <input style="margin-left: 195px;" type="text" name="email" id="email"><br><br>
-            <label for="mobile">Mobile</label>
-            <input style="margin-left: 195px;" type="text" name="mobile" id="mobile" placeholder="+91"><br><br>
+        <video autoplay loop muted plays-inline class="background-video">
+            <source src="images/space1.mp4" type="video/mp4">
+        </video>
 
-            <label for="languagesknown">Languages Known</label>
-            <input style="margin-left: 120px;" type="checkbox" name="languagesknown" id="languagesknown">
-            <label for="languagesknown">Khmer</label><br>
-            <input style="margin-left: 245px;" type="checkbox" name="languagesknown" id="languagesknown">
-            <label for="languagesknown">English</label><br>
-            <input style="margin-left: 245px;" type="checkbox" name="languagesknown" id="languagesknown">
-            <label for="languagesknown">Thai</label><br>
-            <input style="margin-left: 245px;" type="checkbox" name="languagesknown" id="languagesknown">
-            <label for="languagesknown">Gaujarati</label><br><br>
-            
-            <div class="formfield">
-                <label for="additionalinfo">Additional Information</label>
-                <textarea style="margin-left: 95px;" name="additionalinfo" id="additionalinfo" cols="20" rows="4" placeholder="optional"></textarea>
-            </div><br>
-            <input style="margin-left: 245px;" type="submit" value="Submit">
-            <input type="reset" name="reset" id="reset">
-        </form>
+        <nav>
+            <img src="images/planet-fill.png" alt="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BEACHES</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>California</h1>
+            <a href="#">Explore</a>
+        </div>
     </div>
     
+
 </body>
 </html>
