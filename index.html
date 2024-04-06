@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Background Video</title>
+    <title>Wathrak</title>
     <link rel="stylesheet" href="style-index.css">
 
 </head>
@@ -21,9 +21,36 @@
             </ul>
         </nav>
         <div class="content">
-            <h1>California</h1>
+            <h1>Chase Your Dream</h1>
             <a href="#">Explore</a>
         </div>
+
+        <audio id="audio-1" loop>
+            <source src="audio/herbal-tea.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="Audio()" onclick type="button" class="btn-audio"><img src="images/music-fill.png" alt="Play Button" width="35px"></button>
+
+        <script>
+            var x = document.getElementById("audio-1");
+            clickCounter = 0;
+
+            function Audio() {
+                clickCounter ++;
+                if(clickCounter == 1) {
+                    x.play();
+                }
+                if(clickCounter == 2) {
+                    x.pause();
+                    clickCounter = 0;
+                }
+            }
+        </script>
+
+        
+
+
     </div>
     
 
